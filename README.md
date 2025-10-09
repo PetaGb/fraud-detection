@@ -1,6 +1,6 @@
 # fraud-detection
 
-# key challenges:
+## key challenges:
 
 - handling large amount of missing values
 - handling heavily imbalanced target variable
