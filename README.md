@@ -2,7 +2,7 @@
 
 ## key challenges:
 
-- undocumented dataset, where meaning of many fetures would be hard to decode
+- undocumented dataset of unknown origin (possibly synthetic), meaning of many features could be hard to decode
 - handling large amount of missing values
 - handling heavily imbalanced target variable
 
