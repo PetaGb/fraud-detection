@@ -1,6 +1,10 @@
 # fraud-detection
 
+<<<<<<< HEAD
 ## key challenges:
+=======
+ key challenges:
+>>>>>>> 6fae9ca (update README)
 
 - handling large amount of missing values
 - handling heavily imbalanced target variable
