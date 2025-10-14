@@ -2,7 +2,7 @@
 
 ## key challenges:
 
-- undocumented dataset of unknown origin (possibly synthetic), meaning of many features could be hard to decode
+- undocumented dataset of unknown origin (possibly synthetic), meaning of many features could be hard to decode. **Target variable bad_flag could mean fraudulent behavior as well as credit risk.**
 - a large amount of missing values
 - a heavily imbalanced target variable
 - 11 columns with date values
