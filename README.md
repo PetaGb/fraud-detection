@@ -1,11 +1,16 @@
 # credit-risk-detection
 
-## key challenges:
 
-- undocumented dataset of unknown origin (possibly synthetic), meaning of many features could be hard to decode. 
-- a large amount of missing values
-- a heavily imbalanced target variable
-- 11 columns with date values
+##  Key Challenges
+
+1. **Undocumented dataset of unknown origin**  - meaning of many features could be hard to decode
+
+2. **A large amount of missing values**
+
+3. **11 columns with date values**  
+  
+4. **Heavily imbalanced target variable**
+   
 
 ## Likely Meaning of Each Column
 
@@ -29,3 +34,17 @@
 | `first_loan_weekday` | **Weekday of first loan** | 
 | `first_overdue_date_year` / `first_overdue_date_month` / `first_overdue_date_day` | **Date of first overdue payment** |
 | `first_overdue_date_weekday` | **Weekday of the first overdue event** | 
+
+### Missing Value Strategy 
+
+To handle missing values effectively, especially when a large portion of data is missing, it's crucial to choose a method that minimizes information loss and leverages model capabilities:
+
+- **Dropping rows or columns** would cause excessive data loss. Even though there is still enough data overall, in this case, missing values represent valuable information.
+
+- **Imputation** would bring more noise than signal in variables with a substantial portion of missing data.
+
+- **Flagging missingness** is a better option than imputation, but still not suitable for variables with 80% missing data.
+
+- **Using models that support NaNs natively** (like CatBoost, LightGBM, XGBoost) can handle missing data as well as imbalanced target variables.
+
+
